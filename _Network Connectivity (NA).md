@@ -1546,6 +1546,7 @@ conf t
 ~~~
 !@R4
 conf t
+no router ospf 1
  router ospf 1
   router-id 4.4.4.4
   network 4.4.4.4 0.0.0.0 area 0
@@ -2200,7 +2201,7 @@ conf t
 ~~~
 !@R2
 conf t
- router ospf __
+ router ospf 1
   area __ range __.__.__.__  __.__.__.__
   end
 ~~~
@@ -2740,7 +2741,7 @@ Remove Dynamic NAT
 !@R1
 clear ip nat trans *
 conf t
- ip nat pool NATPOOL 208.8.8.10 208.8.8.20 netmask 255.255.255.0
+no ip nat pool NATPOOL 208.8.8.10 208.8.8.20 netmask 255.255.255.0
  no ip nat inside source list 1 pool NATPOOL
  end
 ~~~
