@@ -1,5 +1,5 @@
 
-<!-- Your monitor number = #$34T# -->
+<!-- Your monitor number = 52 -->
 
 ## ⛅ Warm Up for Day 3.
 
@@ -1767,9 +1767,9 @@ __LSA__ - Link-State Advertisement
 ~~~
 !@EDGE
 conf t
- int lo#$34T#
-  ip add #$34T#.#$34T#.#$34T#.#$34T# 255.255.255.255
-  ip ospf 1 area #$34T#
+ int lo52
+  ip add 52.52.52.52 255.255.255.255
+  ip ospf 1 area 52
   end
 clear ip ospf process
 yes
